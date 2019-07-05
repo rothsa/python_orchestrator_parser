@@ -1,26 +1,48 @@
 import json
 
 class Database:
-    def __init__(self, name, indent, port, line_number, parent):
-        self.name = name
-        self.indent = indent
-        self.port = port
-        self.line_number = line_number
-        self.parent = None
+    def __init__(self, line):
+        self.line = line
+        
+    def name:
+        pass
 
-    def pa
+    def indent:
+        pass
 
-class Cluster:
-    def __init__(self, cluster_line_number):
-        self.cluster_line_number = cluster_line_number
-        self.cluster_members = None
+    def port:
+        pass
 
-filepath = 'input.txt'  
-with open(filepath) as fp:  
-   line = fp.readline()
-   cnt = 1
-   while line:
-       if line
-       print("Line {}: {}".format(cnt, line.strip()))
-       line = fp.readline()
-       cnt += 1
+    def self_line_number:
+        pass
+
+    def parent_line_number:
+        pass   
+
+    def cluster_line_number:
+        pass
+
+class Topology:
+    def __init__(self, file):
+        self.file = file
+
+    def read:
+        filepath = 'input.txt'  
+        with open(filepath) as fp:  
+            line = fp.readline()
+        cnt = 1
+        while line:
+            print("Line {}: {}".format(cnt, line.strip()))
+            line = fp.readline()
+            cnt += 1
+
+    def format:
+        pass
+
+    def output:
+        pass
+
+# It's as if the interpreter inserts this at the top
+# of your module when run as the main program.
+__name__ = "__main__"
+    Topology.new()
