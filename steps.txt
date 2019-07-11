@@ -1,0 +1,6 @@
+#Read in the data
+#1. Record the number of spaces at the beginning of each line
+
+#2. Split the data by space into a dict including instance name, port, and index value
+#3. Calculate the master of each dict
+#4. Iterate through the dict and output an array of nested dicts with the same hierarchy and order of the initial orchestrator output

@@ -1,32 +1,33 @@
 import json
+import pytest
 
 class Database:
     def __init__(self, line):
         self.line = line
         
-    def name():
+    def test_name():
         pass
 
-    def indent():
+    def test_indent():
         pass
 
-    def port():
+    def test_port():
         pass
 
-    def self_line_number():
+    def test_self_line_number():
         pass
 
-    def parent_line_number():
+    def test_parent_line_number():
         pass   
 
-    def cluster_line_number():
+    def test_cluster_line_number():
         pass
 
 class Topology():
     def __init__(self, file):
         self.file = file
 
-    def read():
+    def test_read():
         filepath = 'input.txt'  
         with open(filepath) as fp:  
             line = fp.readline()
@@ -36,13 +37,9 @@ class Topology():
             line = fp.readline()
             cnt += 1
 
-    def format():
+    def test_format():
         pass
 
-    def output():
+    def test_output():
         pass
 
-# It's as if the interpreter inserts this at the top
-# of your module when run as the main program.
-__name__ = "__main__"
-    Topology.new()
