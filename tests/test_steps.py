@@ -14,7 +14,7 @@ def test_data_present():
     assert lines >= 1 
 
 def test_split_data():
-    assert databases.split_data() is 0
+    assert databases.split_data()
 
 def test_database_name():
     line = '+ db061:3306[0s,ok,5.6.34-79.1-log,rw,STATEMENT,>>,P-GTID]\n'
@@ -25,7 +25,7 @@ def test_database_spaces():
     assert databases.database_spaces(line) is 1
 
 def test_output_dict():
-    assert databases.output_dict()
+    assert databases.output_dict() 
 
 def test_write_output_file():
-    assert databases.write_output_file() is None
+    assert databases.write_output_file()

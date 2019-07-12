@@ -51,12 +51,18 @@ class Databases():
     def output_dict(self):
         data = self.split_data()
         for k, v in data.items():
-            if v["spaces"] is None:
-                formatted_dict["instance: {}").format(v["name"])] = [] 
-            else 
-                data[k-1]
-            return (json.dumps(string, indent=4)
-    
+     #       if k == 1 or v["spaces"] is None:
+                    #self.formatted_collection[name] = ["replicas":{}]
+               #create an dict entry of that instance with a dict of it's replica containing a list  of the dicts of it's replicas
+              #return [{"instance:foo", "replicas:[]"}]
+               # formatted_dict[name] = [] 
+    #        elsif data[k-1]["spaces"] == v["spaces"]
+            
+        #elsif data[k-1]["spaces"] < v["spaces"]
+            #formatted_dict_list = [data]
+            #return json.dumps(data, indent=4)
+            return self.formatted_collection 
+
     #Write to output file
     def write_output_file(self):
         output_file = open("output.txt","w+")

@@ -1,3 +1,0 @@
-[{"instance":"db061:3306","replicas":[{"instance":"db111:3306","replicas":[]}]},{"instance":"db023:3306","replicas":[{"instance":"db019:3306","replicas":[{"instance":"db142:3306","replicas":[]},{"instance":"db182:3306","replicas":[]},{"instance":"db186:3306","replicas":[]}]},{"instance":"db239:3306","replicas":[{"instance":"db334:3306","replicas":[]},{"instance":"db335:3306","replicas":[]},{"instance":"db336:3306","replicas":[]},{"instance":"db017:4406","replicas":[]}]},{"instance":"db086:3306","replicas":[]}]}]
-
-https://cloud.app.box.com/s/ygrwq1kxwgnitzvhg7lg2ldd7jjmhdjd?mxhero=cloudlink
