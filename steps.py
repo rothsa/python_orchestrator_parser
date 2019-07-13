@@ -11,12 +11,12 @@ class Databases():
         #Read in the data
         #Initialize the DBs
     def __init__(self):
-        #self.logger = logging.getLogger(__name__)
-        #self.logger.setLevel(logging.DEBUG)
-        #self.logger.addHandler(logging.StreamHandler(sys.stdout))
+        self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.DEBUG)
+        self.logger.addHandler(logging.StreamHandler(sys.stdout))
         dir_path = os.path.dirname(os.path.realpath(__file__))
         path = ("{}/input.txt").format(dir_path)
-        #self.logger.info(path)
+        self.logger.info(path)
         self.file = open(path, "r").readlines()
         self.database_collection = collections.OrderedDict()
         self.formatted_collection = collections.OrderedDict()
@@ -60,8 +60,7 @@ class Databases():
             
         #elsif data[k-1]["spaces"] < v["spaces"]
             #formatted_dict_list = [data]
-            #return json.dumps(data, indent=4)
-            return self.formatted_collection 
+            return json.dumps(data, indent=4)
 
     #Write to output file
     def write_output_file(self):
