@@ -4,8 +4,10 @@ import pytest
 import logging
 import sys
 
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
+logger.addHandler(logging.StreamHandler(sys.stdout))
 databases = Databases()
-logger = logging.getLogger("Databases")
 
 def test_data_present():
     lines = databases.data_present()
