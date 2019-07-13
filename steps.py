@@ -5,18 +5,18 @@ import re
 import sys
 import os 
 
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
+logger.addHandler(logging.StreamHandler(sys.stdout))
 
 class Databases():
     
         #Read in the data
         #Initialize the DBs
     def __init__(self):
-        self.logger = logging.getLogger(__name__)
-        self.logger.setLevel(logging.DEBUG)
-        self.logger.addHandler(logging.StreamHandler(sys.stdout))
         dir_path = os.path.dirname(os.path.realpath(__file__))
         path = ("{}/input.txt").format(dir_path)
-        self.logger.info(path)
+        logger.info(path)
         self.file = open(path, "r").readlines()
         self.database_collection = collections.OrderedDict()
         self.formatted_collection = collections.OrderedDict()
